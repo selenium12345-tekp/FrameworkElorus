@@ -8,7 +8,7 @@ import com.elorus.TimesheetPage;
 
 public class TimesheetTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"system"})
     public void timesheetTest() {
 
         // Login

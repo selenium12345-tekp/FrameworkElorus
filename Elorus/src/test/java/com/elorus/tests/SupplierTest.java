@@ -8,7 +8,7 @@ import com.elorus.SupplierPage;
 
 public class SupplierTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"system"})
     public void supplierTest() {
 
         LoginPage loginPage = new LoginPage(driver);

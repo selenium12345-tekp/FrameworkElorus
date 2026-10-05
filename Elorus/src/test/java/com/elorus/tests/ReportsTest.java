@@ -9,13 +9,16 @@ import com.elorus.ReportsPage;
 
 public class ReportsTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"system"})
     public void verifyRequiredReport() {
 
         // Login to Elorus
         LoginPage loginPage = new LoginPage(driver);
 
-        loginPage.login(  "dhanushree3107@gmail.com", "Dhanu@495" );
+        loginPage.login(
+                "dhanushree3107@gmail.com",
+                "Dhanu@495"
+        );
 
         // Open Reports
         ReportsPage reportsPage = new ReportsPage(driver);

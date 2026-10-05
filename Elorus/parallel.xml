@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.elorus.tests.TaskTest"/>
+      <class name="com.elorus.tests.ExpenseTest"/>
+      <class name="com.elorus.tests.LoginTest"/>
+      <class name="com.elorus.tests.PaymentTest"/>
+      <class name="com.elorus.tests.ApplicationSettingsTest"/>
+      <class name="com.elorus.tests.ReportsTest"/>
+      <class name="com.elorus.tests.ClientTest"/>
+      <class name="com.elorus.tests.ProjectTest"/>
+      <class name="com.elorus.tests.LogoutTest"/>
+      <class name="com.elorus.tests.InvoiceTest"/>
+      <class name="com.elorus.tests.SupplierTest"/>
+      <class name="com.elorus.tests.TimesheetTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -8,7 +8,7 @@ import com.elorus.LoginPage;
 
 public class ExpenseTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"integration"})
     public void createExpenseTest() {
 
         LoginPage loginPage = new LoginPage(driver);

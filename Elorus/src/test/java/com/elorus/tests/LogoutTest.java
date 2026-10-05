@@ -12,7 +12,7 @@ import com.elorus.LoginPage;
 
 public class LogoutTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"smoke"})
     public void logoutTest() {
 
         // Login

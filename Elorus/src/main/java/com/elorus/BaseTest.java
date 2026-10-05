@@ -79,7 +79,6 @@ public class BaseTest {
         }
     }
 
-    // ADD THIS
     public WebDriver getDriver() {
         return driver;
     }

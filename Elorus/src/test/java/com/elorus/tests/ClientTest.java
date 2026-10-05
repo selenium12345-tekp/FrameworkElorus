@@ -8,7 +8,7 @@ import com.elorus.LoginPage;
 
 public class ClientTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"integration"})
     public void clientTest() {
 
         // Login

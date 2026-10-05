@@ -8,7 +8,7 @@ import com.elorus.TaskPage;
 
 public class TaskTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"system"})
     public void taskTest() {
 
         // Login

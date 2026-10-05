@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Elorus Cross Browser Suite" parallel="tests" thread-count="3">
+
+    <test name="Chrome Tests">
+        <parameter name="BrowserName" value="Chrome"/>
+
+        <classes>
+            <class name="com.elorus.tests.ApplicationSettingsTest"/>
+            <class name="com.elorus.tests.ClientTest"/>
+            <class name="com.elorus.tests.ExpenseTest"/>
+            <class name="com.elorus.tests.InvoiceTest"/>
+            <class name="com.elorus.tests.LoginTest"/>
+            <class name="com.elorus.tests.LogoutTest"/>
+            <class name="com.elorus.tests.PaymentTest"/>
+            <class name="com.elorus.tests.ProjectTest"/>
+            <class name="com.elorus.tests.ReportsTest"/>
+            <class name="com.elorus.tests.SupplierTest"/>
+            <class name="com.elorus.tests.TaskTest"/>
+            <class name="com.elorus.tests.TimesheetTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Tests">
+        <parameter name="BrowserName" value="Firefox"/>
+
+        <classes>
+            <class name="com.elorus.tests.ApplicationSettingsTest"/>
+            <class name="com.elorus.tests.ClientTest"/>
+            <class name="com.elorus.tests.ExpenseTest"/>
+            <class name="com.elorus.tests.InvoiceTest"/>
+            <class name="com.elorus.tests.LoginTest"/>
+            <class name="com.elorus.tests.LogoutTest"/>
+            <class name="com.elorus.tests.PaymentTest"/>
+            <class name="com.elorus.tests.ProjectTest"/>
+            <class name="com.elorus.tests.ReportsTest"/>
+            <class name="com.elorus.tests.SupplierTest"/>
+            <class name="com.elorus.tests.TaskTest"/>
+            <class name="com.elorus.tests.TimesheetTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge Tests">
+        <parameter name="BrowserName" value="Edge"/>
+
+        <classes>
+            <class name="com.elorus.tests.ApplicationSettingsTest"/>
+            <class name="com.elorus.tests.ClientTest"/>
+            <class name="com.elorus.tests.ExpenseTest"/>
+            <class name="com.elorus.tests.InvoiceTest"/>
+            <class name="com.elorus.tests.LoginTest"/>
+            <class name="com.elorus.tests.LogoutTest"/>
+            <class name="com.elorus.tests.PaymentTest"/>
+            <class name="com.elorus.tests.ProjectTest"/>
+            <class name="com.elorus.tests.ReportsTest"/>
+            <class name="com.elorus.tests.SupplierTest"/>
+            <class name="com.elorus.tests.TaskTest"/>
+            <class name="com.elorus.tests.TimesheetTest"/>
+        </classes>
+    </test>
+
+</suite>

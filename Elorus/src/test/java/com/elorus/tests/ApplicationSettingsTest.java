@@ -9,7 +9,7 @@ import com.elorus.LoginPage;
 
 public class ApplicationSettingsTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"integration"})
     public void updateApplicationSettings() {
 
         // Login

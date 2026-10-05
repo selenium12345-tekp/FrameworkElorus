@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Elorus Automation Suite">
+<suite name="Elorus Distributed Suite" parallel="tests" thread-count="4">
 
-<listeners>
-    <listener class-name="com.elorus.ListenerUtility"/>
-</listeners>
-
-    <test name="All Elorus Tests">
-
+    <test name="Node-1">
         <classes>
-
-           
+            <class name="com.elorus.tests.ApplicationSettingsTest"/>
+            <class name="com.elorus.tests.ClientTest"/>
             <class name="com.elorus.tests.ExpenseTest"/>
+        </classes>
+    </test>
+
+    <test name="Node-2">
+        <classes>
             <class name="com.elorus.tests.InvoiceTest"/>
             <class name="com.elorus.tests.LoginTest"/>
             <class name="com.elorus.tests.LogoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Node-3">
+        <classes>
             <class name="com.elorus.tests.PaymentTest"/>
             <class name="com.elorus.tests.ProjectTest"/>
             <class name="com.elorus.tests.ReportsTest"/>
+        </classes>
+    </test>
+
+    <test name="Node-4">
+        <classes>
             <class name="com.elorus.tests.SupplierTest"/>
             <class name="com.elorus.tests.TaskTest"/>
             <class name="com.elorus.tests.TimesheetTest"/>
-
         </classes>
-
     </test>
 
 </suite>

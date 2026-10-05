@@ -8,7 +8,7 @@ import com.elorus.ProjectPage;
 
 public class ProjectTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"system"})
     public void projectTest() {
 
         // Login

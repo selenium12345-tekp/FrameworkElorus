@@ -8,13 +8,13 @@ import com.elorus.PaymentPage;
 
 public class PaymentTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"system"})
     public void createSupplierRefund() {
 
         // Login
         LoginPage loginPage = new LoginPage(driver);
 
-        loginPage.login("dhanushree3107@gmail.com","Dhanu@495" );
+        loginPage.login("dhanushree3107@gmail.com", "Dhanu@495");
 
         // Payment
         PaymentPage paymentPage = new PaymentPage(driver);

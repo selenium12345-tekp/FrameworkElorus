@@ -9,7 +9,7 @@ import com.elorus.ProjectPage;
 
 public class InvoiceTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"integration"})
     public void createInvoice() {
 
         // Login
