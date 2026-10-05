@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Elorus Suite]">
+  <test thread-count="5" name="Login and Project Time(failed)">
+    <parameter name="BrowserName" value="Chrome"/>
+    <classes>
+      <class name="com.elorus.tests.ProjectTimeTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="projectTimeTest"/>
+          <include name="setPath"/>
+        </methods>
+      </class> <!-- com.elorus.tests.ProjectTimeTest -->
+    </classes>
+  </test> <!-- Login and Project Time(failed) -->
+</suite> <!-- Failed suite [Elorus Suite] -->
