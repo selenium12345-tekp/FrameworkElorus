@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Elorus Group Suite]">
+  <test thread-count="5" name="All Groups(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="integration"/>
+        <include name="system"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.elorus.tests.ExpenseTest">
+        <methods>
+          <include name="createExpenseTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.ExpenseTest -->
+      <class name="com.elorus.tests.PaymentTest">
+        <methods>
+          <include name="createSupplierRefund"/>
+        </methods>
+      </class> <!-- com.elorus.tests.PaymentTest -->
+      <class name="com.elorus.tests.LoginTest">
+        <methods>
+          <include name="loginLogoutTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.LoginTest -->
+      <class name="com.elorus.tests.ClientTest">
+        <methods>
+          <include name="clientTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.ClientTest -->
+      <class name="com.elorus.tests.InvoiceTest">
+        <methods>
+          <include name="createInvoice"/>
+        </methods>
+      </class> <!-- com.elorus.tests.InvoiceTest -->
+      <class name="com.elorus.tests.TimesheetTest">
+        <methods>
+          <include name="timesheetTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.TimesheetTest -->
+      <class name="com.elorus.tests.TaskTest">
+        <methods>
+          <include name="taskTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.TaskTest -->
+      <class name="com.elorus.tests.SupplierTest">
+        <methods>
+          <include name="supplierTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.SupplierTest -->
+      <class name="com.elorus.tests.ProjectTest">
+        <methods>
+          <include name="projectTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.ProjectTest -->
+      <class name="com.elorus.tests.ReportsTest">
+        <methods>
+          <include name="verifyRequiredReport"/>
+        </methods>
+      </class> <!-- com.elorus.tests.ReportsTest -->
+      <class name="com.elorus.tests.LogoutTest">
+        <methods>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.elorus.tests.LogoutTest -->
+      <class name="com.elorus.tests.ApplicationSettingsTest">
+        <methods>
+          <include name="updateApplicationSettings"/>
+        </methods>
+      </class> <!-- com.elorus.tests.ApplicationSettingsTest -->
+    </classes>
+  </test> <!-- All Groups(failed) -->
+</suite> <!-- Failed suite [Elorus Group Suite] -->

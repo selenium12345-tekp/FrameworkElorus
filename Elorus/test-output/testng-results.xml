@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-05T16:35:36 IST" name="Elorus Automation Suite" finished-at="2026-10-05T16:36:45 IST" duration-ms="68903">
+  <suite started-at="2026-10-06T10:01:08 IST" name="Elorus Distributed Suite" finished-at="2026-10-06T10:04:22 IST" duration-ms="194273">
     <groups>
+      <group name="system">
+        <method signature="PaymentTest.createSupplierRefund()[pri:0, instance:com.elorus.tests.PaymentTest@6ad82709]" name="createSupplierRefund" class="com.elorus.tests.PaymentTest"/>
+        <method signature="ProjectTest.projectTest()[pri:0, instance:com.elorus.tests.ProjectTest@510f3d34]" name="projectTest" class="com.elorus.tests.ProjectTest"/>
+        <method signature="ReportsTest.verifyRequiredReport()[pri:0, instance:com.elorus.tests.ReportsTest@7817fd62]" name="verifyRequiredReport" class="com.elorus.tests.ReportsTest"/>
+        <method signature="SupplierTest.supplierTest()[pri:0, instance:com.elorus.tests.SupplierTest@7770f470]" name="supplierTest" class="com.elorus.tests.SupplierTest"/>
+        <method signature="TaskTest.taskTest()[pri:0, instance:com.elorus.tests.TaskTest@5e5d171f]" name="taskTest" class="com.elorus.tests.TaskTest"/>
+        <method signature="TimesheetTest.timesheetTest()[pri:0, instance:com.elorus.tests.TimesheetTest@24313fcc]" name="timesheetTest" class="com.elorus.tests.TimesheetTest"/>
+      </group> <!-- system -->
+      <group name="smoke">
+        <method signature="LoginTest.loginLogoutTest()[pri:0, instance:com.elorus.tests.LoginTest@752325ad]" name="loginLogoutTest" class="com.elorus.tests.LoginTest"/>
+        <method signature="LogoutTest.logoutTest()[pri:0, instance:com.elorus.tests.LogoutTest@279fedbd]" name="logoutTest" class="com.elorus.tests.LogoutTest"/>
+      </group> <!-- smoke -->
+      <group name="integration">
+        <method signature="ApplicationSettingsTest.updateApplicationSettings()[pri:0, instance:com.elorus.tests.ApplicationSettingsTest@206a70ef]" name="updateApplicationSettings" class="com.elorus.tests.ApplicationSettingsTest"/>
+        <method signature="ClientTest.clientTest()[pri:0, instance:com.elorus.tests.ClientTest@3c41ed1d]" name="clientTest" class="com.elorus.tests.ClientTest"/>
+        <method signature="ExpenseTest.createExpenseTest()[pri:0, instance:com.elorus.tests.ExpenseTest@54d9d12d]" name="createExpenseTest" class="com.elorus.tests.ExpenseTest"/>
+        <method signature="InvoiceTest.createInvoice()[pri:0, instance:com.elorus.tests.InvoiceTest@2a5c8d3f]" name="createInvoice" class="com.elorus.tests.InvoiceTest"/>
+      </group> <!-- integration -->
     </groups>
-    <test started-at="2026-10-05T16:35:36 IST" name="All Elorus Tests" finished-at="2026-10-05T16:36:45 IST" duration-ms="68903">
-      <class name="com.elorus.tests.ExpenseTest">
-        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.ExpenseTest@75d4a5c2]" started-at="2026-10-05T16:35:36 IST" name="setPath" finished-at="2026-10-05T16:35:36 IST" duration-ms="25" status="PASS">
+    <test started-at="2026-10-06T10:01:08 IST" name="Node-3" finished-at="2026-10-06T10:02:56 IST" duration-ms="108037">
+      <class name="com.elorus.tests.PaymentTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.PaymentTest@6ad82709]" started-at="2026-10-06T10:01:08 IST" name="setPath" finished-at="2026-10-06T10:01:08 IST" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPath -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.ExpenseTest@75d4a5c2]" started-at="2026-10-05T16:35:37 IST" name="launchBrowser" finished-at="2026-10-05T16:36:04 IST" duration-ms="27225" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.PaymentTest@6ad82709]" started-at="2026-10-06T10:01:08 IST" name="launchBrowser" finished-at="2026-10-06T10:01:17 IST" duration-ms="8198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,28 +40,129 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="createExpenseTest()[pri:0, instance:com.elorus.tests.ExpenseTest@75d4a5c2]" started-at="2026-10-05T16:36:04 IST" name="createExpenseTest" finished-at="2026-10-05T16:36:45 IST" duration-ms="41117" status="FAIL">
+        <test-method signature="createSupplierRefund()[pri:0, instance:com.elorus.tests.PaymentTest@6ad82709]" started-at="2026-10-06T10:01:17 IST" name="createSupplierRefund" finished-at="2026-10-06T10:01:50 IST" duration-ms="33168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSupplierRefund -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.PaymentTest@6ad82709]" started-at="2026-10-06T10:01:50 IST" name="closeBrowser" finished-at="2026-10-06T10:01:50 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.PaymentTest -->
+      <class name="com.elorus.tests.ReportsTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.ReportsTest@7817fd62]" started-at="2026-10-06T10:02:26 IST" name="setPath" finished-at="2026-10-06T10:02:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.ReportsTest@7817fd62]" started-at="2026-10-06T10:02:26 IST" name="launchBrowser" finished-at="2026-10-06T10:02:47 IST" duration-ms="20640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyRequiredReport()[pri:0, instance:com.elorus.tests.ReportsTest@7817fd62]" started-at="2026-10-06T10:02:47 IST" name="verifyRequiredReport" finished-at="2026-10-06T10:02:56 IST" duration-ms="9018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequiredReport -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.ReportsTest@7817fd62]" started-at="2026-10-06T10:02:56 IST" name="closeBrowser" finished-at="2026-10-06T10:02:56 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.ReportsTest -->
+      <class name="com.elorus.tests.ProjectTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.ProjectTest@510f3d34]" started-at="2026-10-06T10:01:50 IST" name="setPath" finished-at="2026-10-06T10:01:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.ProjectTest@510f3d34]" started-at="2026-10-06T10:01:50 IST" name="launchBrowser" finished-at="2026-10-06T10:02:15 IST" duration-ms="24959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="projectTest()[pri:0, instance:com.elorus.tests.ProjectTest@510f3d34]" started-at="2026-10-06T10:02:15 IST" name="projectTest" finished-at="2026-10-06T10:02:26 IST" duration-ms="10931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.ProjectTest@510f3d34]" started-at="2026-10-06T10:02:26 IST" name="closeBrowser" finished-at="2026-10-06T10:02:26 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.ProjectTest -->
+    </test> <!-- Node-3 -->
+    <test started-at="2026-10-06T10:01:08 IST" name="Node-4" finished-at="2026-10-06T10:03:26 IST" duration-ms="137757">
+      <class name="com.elorus.tests.TaskTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.TaskTest@5e5d171f]" started-at="2026-10-06T10:01:52 IST" name="setPath" finished-at="2026-10-06T10:01:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.TaskTest@5e5d171f]" started-at="2026-10-06T10:01:52 IST" name="launchBrowser" finished-at="2026-10-06T10:02:15 IST" duration-ms="22833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="taskTest()[pri:0, instance:com.elorus.tests.TaskTest@5e5d171f]" started-at="2026-10-06T10:02:15 IST" name="taskTest" finished-at="2026-10-06T10:02:28 IST" duration-ms="12692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taskTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.TaskTest@5e5d171f]" started-at="2026-10-06T10:02:28 IST" name="closeBrowser" finished-at="2026-10-06T10:02:28 IST" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.TaskTest -->
+      <class name="com.elorus.tests.TimesheetTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.TimesheetTest@24313fcc]" started-at="2026-10-06T10:02:28 IST" name="setPath" finished-at="2026-10-06T10:02:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.TimesheetTest@24313fcc]" started-at="2026-10-06T10:02:28 IST" name="launchBrowser" finished-at="2026-10-06T10:02:47 IST" duration-ms="18427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="timesheetTest()[pri:0, instance:com.elorus.tests.TimesheetTest@24313fcc]" started-at="2026-10-06T10:02:47 IST" name="timesheetTest" finished-at="2026-10-06T10:03:26 IST" duration-ms="38673" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'Select-menu-outer')]//div[contains(@class,'Select-option')][1] (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(@class,'btn-success') and not(contains(@class,'disabled')) and normalize-space()='Save'] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55675}, goog:processID: 11816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55675/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ddd141b03558fe768aa0198e15417ba2]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57591}, goog:processID: 8076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57591/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf1f529a8829d27db774c92cf0ce952]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'Select-menu-outer')]//div[contains(@class,'Select-option')][1] (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(@class,'btn-success') and not(contains(@class,'disabled')) and normalize-space()='Save'] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55675}, goog:processID: 11816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55675/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ddd141b03558fe768aa0198e15417ba2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57591}, goog:processID: 8076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57591/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf1f529a8829d27db774c92cf0ce952
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.elorus.ExpensePage.selectCategory(ExpensePage.java:65)
-at com.elorus.ExpensePage.createExpense(ExpensePage.java:102)
-at com.elorus.tests.ExpenseTest.createExpenseTest(ExpenseTest.java:27)
+at com.elorus.TimesheetPage.clickSave(TimesheetPage.java:60)
+at com.elorus.tests.TimesheetTest.timesheetTest(TimesheetTest.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -58,29 +177,418 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- timesheetTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.TimesheetTest@24313fcc]" started-at="2026-10-06T10:03:26 IST" name="closeBrowser" finished-at="2026-10-06T10:03:26 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.TimesheetTest -->
+      <class name="com.elorus.tests.SupplierTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.SupplierTest@7770f470]" started-at="2026-10-06T10:01:08 IST" name="setPath" finished-at="2026-10-06T10:01:08 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.SupplierTest@7770f470]" started-at="2026-10-06T10:01:08 IST" name="launchBrowser" finished-at="2026-10-06T10:01:40 IST" duration-ms="31598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="supplierTest()[pri:0, instance:com.elorus.tests.SupplierTest@7770f470]" started-at="2026-10-06T10:01:40 IST" name="supplierTest" finished-at="2026-10-06T10:01:51 IST" duration-ms="11416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supplierTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.SupplierTest@7770f470]" started-at="2026-10-06T10:01:51 IST" name="closeBrowser" finished-at="2026-10-06T10:01:52 IST" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.SupplierTest -->
+    </test> <!-- Node-4 -->
+    <test started-at="2026-10-06T10:01:08 IST" name="Node-1" finished-at="2026-10-06T10:03:31 IST" duration-ms="142772">
+      <class name="com.elorus.tests.ExpenseTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.ExpenseTest@54d9d12d]" started-at="2026-10-06T10:02:54 IST" name="setPath" finished-at="2026-10-06T10:02:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.ExpenseTest@54d9d12d]" started-at="2026-10-06T10:02:54 IST" name="launchBrowser" finished-at="2026-10-06T10:03:00 IST" duration-ms="6183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="createExpenseTest()[pri:0, instance:com.elorus.tests.ExpenseTest@54d9d12d]" started-at="2026-10-06T10:03:00 IST" name="createExpenseTest" finished-at="2026-10-06T10:03:31 IST" duration-ms="30512" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=153.0.8010.55)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6aca46ca1d3f8e1256cdd7f20cd7bd78, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58197}, goog:processID: 17460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58197/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6aca46ca1d3f8e1256cdd7f20cd7bd78]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=153.0.8010.55)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6aca46ca1d3f8e1256cdd7f20cd7bd78, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58197}, goog:processID: 17460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58197/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6aca46ca1d3f8e1256cdd7f20cd7bd78
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.toString(Unknown Source)
+at java.base/java.lang.String.valueOf(String.java:4454)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+at java.base/java.lang.String.valueOf(String.java:4454)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+at com.elorus.WebActionUtil.click(WebActionUtil.java:21)
+at com.elorus.LoginPage.enterEmail(LoginPage.java:37)
+at com.elorus.LoginPage.login(LoginPage.java:51)
+at com.elorus.tests.ExpenseTest.createExpenseTest(ExpenseTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- createExpenseTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.ExpenseTest@75d4a5c2]" started-at="2026-10-05T16:36:45 IST" name="closeBrowser" finished-at="2026-10-05T16:36:45 IST" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.ExpenseTest@54d9d12d]" started-at="2026-10-06T10:03:31 IST" name="closeBrowser" finished-at="2026-10-06T10:03:31 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.elorus.tests.ExpenseTest -->
-    </test> <!-- All Elorus Tests -->
-  </suite> <!-- Elorus Automation Suite -->
+      <class name="com.elorus.tests.ClientTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.ClientTest@3c41ed1d]" started-at="2026-10-06T10:01:50 IST" name="setPath" finished-at="2026-10-06T10:01:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.ClientTest@3c41ed1d]" started-at="2026-10-06T10:01:50 IST" name="launchBrowser" finished-at="2026-10-06T10:02:15 IST" duration-ms="25548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="clientTest()[pri:0, instance:com.elorus.tests.ClientTest@3c41ed1d]" started-at="2026-10-06T10:02:15 IST" name="clientTest" finished-at="2026-10-06T10:02:53 IST" duration-ms="38402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clientTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.ClientTest@3c41ed1d]" started-at="2026-10-06T10:02:53 IST" name="closeBrowser" finished-at="2026-10-06T10:02:54 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.ClientTest -->
+      <class name="com.elorus.tests.ApplicationSettingsTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.ApplicationSettingsTest@206a70ef]" started-at="2026-10-06T10:01:08 IST" name="setPath" finished-at="2026-10-06T10:01:08 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.ApplicationSettingsTest@206a70ef]" started-at="2026-10-06T10:01:08 IST" name="launchBrowser" finished-at="2026-10-06T10:01:40 IST" duration-ms="31631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="updateApplicationSettings()[pri:0, instance:com.elorus.tests.ApplicationSettingsTest@206a70ef]" started-at="2026-10-06T10:01:40 IST" name="updateApplicationSettings" finished-at="2026-10-06T10:01:49 IST" duration-ms="9210" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <li>...</li> is not clickable at point (183, 561). Other element would receive the click: <div style="max-height: 100%; overflow-y: auto;">...</div>
+  (Session info: chrome=153.0.8010.55)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a04ab0a24b2a72aac05ae2fbe21456c, clickElement {id=f.FA7D50A651A2F0784729FB71D08BB3B5.d.113A39586C53BFE9B77DC17900678355.e.59}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64934}, goog:processID: 15292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64934/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a04ab0a24b2a72aac05ae2fbe21456c)] -> xpath: //*[normalize-space()='Application settings']]
+Session ID: 3a04ab0a24b2a72aac05ae2fbe21456c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li>...</li> is not clickable at point (183, 561). Other element would receive the click: <div style="max-height: 100%; overflow-y: auto;">...</div>
+  (Session info: chrome=153.0.8010.55)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a04ab0a24b2a72aac05ae2fbe21456c, clickElement {id=f.FA7D50A651A2F0784729FB71D08BB3B5.d.113A39586C53BFE9B77DC17900678355.e.59}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64934}, goog:processID: 15292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64934/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a04ab0a24b2a72aac05ae2fbe21456c)] -> xpath: //*[normalize-space()='Application settings']]
+Session ID: 3a04ab0a24b2a72aac05ae2fbe21456c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.elorus.ApplicationSettingsPage.openApplicationSettings(ApplicationSettingsPage.java:37)
+at com.elorus.tests.ApplicationSettingsTest.updateApplicationSettings(ApplicationSettingsTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateApplicationSettings -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.ApplicationSettingsTest@206a70ef]" started-at="2026-10-06T10:01:49 IST" name="closeBrowser" finished-at="2026-10-06T10:01:50 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.ApplicationSettingsTest -->
+    </test> <!-- Node-1 -->
+    <test started-at="2026-10-06T10:01:08 IST" name="Node-2" finished-at="2026-10-06T10:04:22 IST" duration-ms="194273">
+      <class name="com.elorus.tests.LoginTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.LoginTest@752325ad]" started-at="2026-10-06T10:02:21 IST" name="setPath" finished-at="2026-10-06T10:02:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.LoginTest@752325ad]" started-at="2026-10-06T10:02:21 IST" name="launchBrowser" finished-at="2026-10-06T10:02:23 IST" duration-ms="2624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginLogoutTest()[pri:0, instance:com.elorus.tests.LoginTest@752325ad]" started-at="2026-10-06T10:02:23 IST" name="loginLogoutTest" finished-at="2026-10-06T10:03:25 IST" duration-ms="61391" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (65d03fac1ec4d4bfcb13995a80fdc3e1)] -> xpath: //*[normalize-space()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58142}, goog:processID: 7940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58142/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65d03fac1ec4d4bfcb13995a80fdc3e1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (65d03fac1ec4d4bfcb13995a80fdc3e1)] -> xpath: //*[normalize-space()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58142}, goog:processID: 7940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58142/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65d03fac1ec4d4bfcb13995a80fdc3e1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.elorus.WebActionUtil.click(WebActionUtil.java:21)
+at com.elorus.LoginPage.logout(LoginPage.java:58)
+at com.elorus.tests.LoginTest.loginLogoutTest(LoginTest.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLogoutTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.LoginTest@752325ad]" started-at="2026-10-06T10:03:25 IST" name="closeBrowser" finished-at="2026-10-06T10:03:25 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.LoginTest -->
+      <class name="com.elorus.tests.LogoutTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.LogoutTest@279fedbd]" started-at="2026-10-06T10:03:25 IST" name="setPath" finished-at="2026-10-06T10:03:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.LogoutTest@279fedbd]" started-at="2026-10-06T10:03:25 IST" name="launchBrowser" finished-at="2026-10-06T10:03:51 IST" duration-ms="25984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="logoutTest()[pri:0, instance:com.elorus.tests.LogoutTest@279fedbd]" started-at="2026-10-06T10:03:51 IST" name="logoutTest" finished-at="2026-10-06T10:04:22 IST" duration-ms="31005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.LogoutTest@279fedbd]" started-at="2026-10-06T10:04:22 IST" name="closeBrowser" finished-at="2026-10-06T10:04:22 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.LogoutTest -->
+      <class name="com.elorus.tests.InvoiceTest">
+        <test-method is-config="true" signature="setPath()[pri:0, instance:com.elorus.tests.InvoiceTest@2a5c8d3f]" started-at="2026-10-06T10:01:08 IST" name="setPath" finished-at="2026-10-06T10:01:08 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPath -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.elorus.tests.InvoiceTest@2a5c8d3f]" started-at="2026-10-06T10:01:08 IST" name="launchBrowser" finished-at="2026-10-06T10:01:40 IST" duration-ms="31604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="createInvoice()[pri:0, instance:com.elorus.tests.InvoiceTest@2a5c8d3f]" started-at="2026-10-06T10:01:40 IST" name="createInvoice" finished-at="2026-10-06T10:02:21 IST" duration-ms="40585" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'eos-modal-content')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64935}, goog:processID: 9084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64935/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b607aecba91ecc8181efcb80d66a239]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,'eos-modal-content')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64935}, goog:processID: 9084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64935/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b607aecba91ecc8181efcb80d66a239
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.elorus.InvoicePage.clickInvoice(InvoicePage.java:35)
+at com.elorus.tests.InvoiceTest.createInvoice(InvoiceTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvoice -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.elorus.tests.InvoiceTest@2a5c8d3f]" started-at="2026-10-06T10:02:21 IST" name="closeBrowser" finished-at="2026-10-06T10:02:21 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.elorus.tests.InvoiceTest -->
+    </test> <!-- Node-2 -->
+  </suite> <!-- Elorus Distributed Suite -->
 </testng-results>

@@ -8,23 +8,136 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Elorus Automation Suite</th></tr>
-<tr><td><a href="#t0">All Elorus Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">68,903</td><td></td><td></td></tr>
+<tr><th colspan="8">Elorus Distributed Suite</th></tr>
+<tr><td><a href="#t0">Node-3</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">108,037</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Node-4</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">137,757</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Node-1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">142,772</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Node-2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">194,273</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">582,839</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Elorus Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Elorus Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.elorus.tests.ExpenseTest</td><td><a href="#m0">createExpenseTest</a></td><td rowspan="1">1791198364241</td><td rowspan="1">41117</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Elorus Distributed Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Node-3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.elorus.tests.PaymentTest</td><td><a href="#m0">createSupplierRefund</a></td><td rowspan="1">1791261077079</td><td rowspan="1">33168</td></tr><tr class="passedodd"><td rowspan="1">com.elorus.tests.ProjectTest</td><td><a href="#m1">projectTest</a></td><td rowspan="1">1791261135518</td><td rowspan="1">10931</td></tr><tr class="passedeven"><td rowspan="1">com.elorus.tests.ReportsTest</td><td><a href="#m2">verifyRequiredReport</a></td><td rowspan="1">1791261167379</td><td rowspan="1">9018</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Node-4 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.elorus.tests.TimesheetTest</td><td><a href="#m3">timesheetTest</a></td><td rowspan="1">1791261167345</td><td rowspan="1">38673</td></tr><tr><th colspan="4">Node-4 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.elorus.tests.SupplierTest</td><td><a href="#m4">supplierTest</a></td><td rowspan="1">1791261100447</td><td rowspan="1">11416</td></tr><tr class="passedodd"><td rowspan="1">com.elorus.tests.TaskTest</td><td><a href="#m5">taskTest</a></td><td rowspan="1">1791261135563</td><td rowspan="1">12692</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Node-1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.elorus.tests.ApplicationSettingsTest</td><td><a href="#m6">updateApplicationSettings</a></td><td rowspan="1">1791261100476</td><td rowspan="1">9210</td></tr><tr class="failedodd"><td rowspan="1">com.elorus.tests.ExpenseTest</td><td><a href="#m7">createExpenseTest</a></td><td rowspan="1">1791261180662</td><td rowspan="1">30512</td></tr><tr><th colspan="4">Node-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.elorus.tests.ClientTest</td><td><a href="#m8">clientTest</a></td><td rowspan="1">1791261135561</td><td rowspan="1">38402</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Node-2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.elorus.tests.InvoiceTest</td><td><a href="#m9">createInvoice</a></td><td rowspan="1">1791261100448</td><td rowspan="1">40585</td></tr><tr class="failedodd"><td rowspan="1">com.elorus.tests.LoginTest</td><td><a href="#m10">loginLogoutTest</a></td><td rowspan="1">1791261143957</td><td rowspan="1">61391</td></tr><tr><th colspan="4">Node-2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.elorus.tests.LogoutTest</td><td><a href="#m11">logoutTest</a></td><td rowspan="1">1791261231644</td><td rowspan="1">31005</td></tr></tbody>
 </table>
-<h2>All Elorus Tests</h2><h3 id="m0">com.elorus.tests.ExpenseTest#createExpenseTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,&apos;Select-menu-outer&apos;)]//div[contains(@class,&apos;Select-option&apos;)][1] (tried for 30 second(s) with 500 milliseconds interval)
+<h2>Node-3</h2><h3 id="m0">com.elorus.tests.PaymentTest#createSupplierRefund</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.elorus.tests.ProjectTest#projectTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.elorus.tests.ReportsTest#verifyRequiredReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Node-4</h2><h3 id="m3">com.elorus.tests.TimesheetTest#timesheetTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(@class,&apos;btn-success&apos;) and not(contains(@class,&apos;disabled&apos;)) and normalize-space()=&apos;Save&apos;] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55675}, goog:processID: 11816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55675/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ddd141b03558fe768aa0198e15417ba2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57591}, goog:processID: 8076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57591/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddf1f529a8829d27db774c92cf0ce952
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.elorus.ExpensePage.selectCategory(ExpensePage.java:65)
-	at com.elorus.ExpensePage.createExpense(ExpensePage.java:102)
-	at com.elorus.tests.ExpenseTest.createExpenseTest(ExpenseTest.java:27)
+	at com.elorus.TimesheetPage.clickSave(TimesheetPage.java:60)
+	at com.elorus.tests.TimesheetTest.timesheetTest(TimesheetTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.elorus.tests.SupplierTest#supplierTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.elorus.tests.TaskTest#taskTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Node-1</h2><h3 id="m6">com.elorus.tests.ApplicationSettingsTest#updateApplicationSettings</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li&gt;...&lt;/li&gt; is not clickable at point (183, 561). Other element would receive the click: &lt;div style=&quot;max-height: 100%; overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=153.0.8010.55)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a04ab0a24b2a72aac05ae2fbe21456c, clickElement {id=f.FA7D50A651A2F0784729FB71D08BB3B5.d.113A39586C53BFE9B77DC17900678355.e.59}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64934}, goog:processID: 15292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64934/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a04ab0a24b2a72aac05ae2fbe21456c)] -&gt; xpath: //*[normalize-space()=&apos;Application settings&apos;]]
+Session ID: 3a04ab0a24b2a72aac05ae2fbe21456c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.elorus.ApplicationSettingsPage.openApplicationSettings(ApplicationSettingsPage.java:37)
+	at com.elorus.tests.ApplicationSettingsTest.updateApplicationSettings(ApplicationSettingsTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.elorus.tests.ExpenseTest#createExpenseTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=153.0.8010.55)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6aca46ca1d3f8e1256cdd7f20cd7bd78, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58197}, goog:processID: 17460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58197/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6aca46ca1d3f8e1256cdd7f20cd7bd78
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4454)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4454)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at com.elorus.WebActionUtil.click(WebActionUtil.java:21)
+	at com.elorus.LoginPage.enterEmail(LoginPage.java:37)
+	at com.elorus.LoginPage.login(LoginPage.java:51)
+	at com.elorus.tests.ExpenseTest.createExpenseTest(ExpenseTest.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.elorus.tests.ClientTest#clientTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Node-2</h2><h3 id="m9">com.elorus.tests.InvoiceTest#createInvoice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class,&apos;eos-modal-content&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64935}, goog:processID: 9084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64935/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b607aecba91ecc8181efcb80d66a239
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.elorus.InvoicePage.clickInvoice(InvoicePage.java:35)
+	at com.elorus.tests.InvoiceTest.createInvoice(InvoiceTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.elorus.tests.LoginTest#loginLogoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (65d03fac1ec4d4bfcb13995a80fdc3e1)] -&gt; xpath: //*[normalize-space()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.55, chrome: {chromedriverVersion: 153.0.8010.52 (78e5e45d4bb4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58142}, goog:processID: 7940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58142/devtoo..., se:cdpVersion: 153.0.8010.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65d03fac1ec4d4bfcb13995a80fdc3e1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.elorus.WebActionUtil.click(WebActionUtil.java:21)
+	at com.elorus.LoginPage.logout(LoginPage.java:58)
+	at com.elorus.tests.LoginTest.loginLogoutTest(LoginTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.elorus.tests.LogoutTest#logoutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
